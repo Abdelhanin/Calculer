@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Game</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <h1 id="name" class="alert alert-success text-center"></h1>
+    <div class="">
+        <div class="row d-flex justify-content-around ">
+            <input type="text" readonly value="1212" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="+" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="3131" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t1"  class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid1" class="col-1 d-none " >
+            <img src="invalid.png" id="invalid1" class="col-1 d-none " >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="1" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="^" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="0" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t2"  class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid2" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid2" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="4" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="^" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="5" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t3"  class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid3" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid3" class="col-1 d-none" >
+        </div>
+        
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="32" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="*" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="15" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t4"   class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid4" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid4" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="9333" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="/" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="3" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number"  id="t5" class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid5" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid5" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="9" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="^" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="7" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number"  id="t6" class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid6" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid6" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="40" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="*" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="12" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t7"  class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid7" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid7" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="2" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="^" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="10" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number" id="t8"  class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid8" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid8" class="col-1 d-none" >
+        </div>
+
+        <div class="row d-flex justify-content-around my-3 ">
+            <input type="text" readonly value="13" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="*" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="50" class="form-control col-1 text-center font-weight-bold">
+            <input type="text" readonly value="=" class="form-control col-1 text-center font-weight-bold">
+            <input type="number"  id="t9" class="form-control col-2 text-center">
+            <!-- <input type="button" class="btn btn-success  text-center" value="Check"> -->
+            <img src="valid.png" id="valid9" class="col-1 d-none" >
+            <img src="invalid.png" id="invalid9" class="col-1 d-none" >
+        </div>
+        <div class="text-center">
+        <input type="button" value="Valider" id="valid"  class="btn btn-success col-3 text-center">
+        </div>
+    </div>
+</body>
+<script src="bootstrap.js"></script>
+<script src="popper.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    function get(id){
+        var id2 =document.getElementById(id);
+        return id2;
+    }
+    var name = prompt("أدخل اسمك");
+    document.getElementById("name").innerHTML="مرحبا بك يا "+name;
+    document.getElementById("valid").addEventListener('click',function(){
+        //////////////////////////////////////////////
+        if(get('t1').value ==4343){
+            // alert("hello");
+            get('valid1').classList.remove('d-none');
+            get('invalid1').classList.add('d-none');
+        }
+        else{
+            get('invalid1').classList.remove('d-none');
+            get('valid1').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t2').value ==1){
+            // alert("hello");
+            get('valid2').classList.remove('d-none');
+            get('invalid2').classList.add('d-none');
+        }
+        else{
+            get('invalid2').classList.remove('d-none');
+            get('valid2').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t3').value ==1024){
+            // alert("hello");
+            get('valid3').classList.remove('d-none');
+            get('invalid3').classList.add('d-none');
+        }
+        else{
+            get('invalid3').classList.remove('d-none');
+            get('valid3').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t4').value ==480){
+            // alert("hello");
+            get('valid4').classList.remove('d-none');
+            get('invalid4').classList.add('d-none');
+        }
+        else{
+            get('invalid4').classList.remove('d-none');
+            get('valid4').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t5').value ==3111){
+            // alert("hello");
+            get('valid5').classList.remove('d-none');
+            get('invalid5').classList.add('d-none');
+        }
+        else{
+            get('invalid5').classList.remove('d-none');
+            get('valid5').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t6').value ==4782969){
+            // alert("hello");
+            get('valid6').classList.remove('d-none');
+            get('invalid6').classList.add('d-none');
+        }
+        else{
+            get('invalid6').classList.remove('d-none');
+            get('valid6').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t7').value ==480){
+            // alert("hello");
+            get('valid7').classList.remove('d-none');
+            get('invalid7').classList.add('d-none');
+        }
+        else{
+            get('invalid7').classList.remove('d-none');
+            get('valid7').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t8').value ==1024){
+            // alert("hello");
+            get('valid8').classList.remove('d-none');
+            get('invalid8').classList.add('d-none');
+        }
+        else{
+            get('invalid8').classList.remove('d-none');
+            get('valid8').classList.add('d-none');
+        }
+        //////////////////////////////////////////////
+        if(get('t9').value ==650){
+            // alert("hello");
+            get('valid9').classList.remove('d-none');
+            get('invalid9').classList.add('d-none');
+        }
+        else{
+            get('invalid9').classList.remove('d-none');
+            get('valid9').classList.add('d-none');
+        }
+    })
+
+</script>
+</html>
